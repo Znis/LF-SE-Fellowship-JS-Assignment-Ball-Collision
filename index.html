@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Ball Collision</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="num-balls-input-div">
+      <label for="num-of-balls">Enter the Number of Balls (5 to 500): </label>
+      <input
+        type="number"
+        name="num-of-balls"
+        class="num-balls-input"
+        id="num-of-balls"
+        value="10"
+        min="5"
+        max="500"
+      />
+      <button class="button" id="enter-btn">Enter</button>
+    </div>
+
     <div class="main-container" id="main-container"></div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
