@@ -10,4 +10,4 @@ const COLORS = ["#00B6D3", "magenta", "orange", "maroon"];
 const MIN_MASS = MIN_DENSITY * ((4 / 3) * Math.PI * Math.pow(MIN_RADIUS, 3)); //calculates mass from volume and density
 const MAX_MASS = MAX_DENSITY * ((4 / 3) * Math.PI * Math.pow(MAX_RADIUS, 3));
 const MIN_BALL_COUNT_ALLOWED = 5;
-const MAX_BALL_COUNT_ALLOWED = 500;
+const MAX_BALL_COUNT_ALLOWED = 1000;
