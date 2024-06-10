@@ -20,9 +20,6 @@ let BOUNDARY_Y_MAX = MAIN_CONTAINER_INFO.height;
 function animate() {
   for (let i = 0; i < BALL_COUNT; i++) {
     ballArray[i].moveBall();
-    ballArray[i].initial_velocityX = ballArray[i].velocityX;
-    ballArray[i].initial_velocityY = ballArray[i].velocityY;
-    
   }
   checkAndHandleCollision();
   requestAnimationFrame(animate);
@@ -32,7 +29,10 @@ function animate() {
 and if changed TouchEvent, re run the simulation */
 ENTER_BUTTON.addEventListener("click", () => {
   BALL_COUNT = Math.floor(NUMBER_OF_BALLS_INPUT.value);
-  if (BALL_COUNT < MIN_BALL_COUNT_ALLOWED || BALL_COUNT > MAX_BALL_COUNT_ALLOWED) {
+  if (
+    BALL_COUNT < MIN_BALL_COUNT_ALLOWED ||
+    BALL_COUNT > MAX_BALL_COUNT_ALLOWED
+  ) {
     BALL_COUNT = 100;
     NUMBER_OF_BALLS_INPUT.value = 100;
   }
